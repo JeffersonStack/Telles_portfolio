@@ -1,0 +1,43 @@
+.home {
+  background: $dark-color;
+  color: $light-color;
+  &-title {
+    text-align: center;
+  }
+
+  &-content {
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    h1 {
+      font-size: 2.8rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 0.3rem;
+    }
+
+    span {
+      display: block;
+      font-style: italic;
+      margin-bottom: 2rem;
+    }
+  }
+}
+
+// Media Query: min-width: 768px / Desktop
+
+@media (min-width: 768px) {
+  .home {
+    &-content {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+}
