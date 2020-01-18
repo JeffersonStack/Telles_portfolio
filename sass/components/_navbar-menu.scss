@@ -1,0 +1,83 @@
+// Componentes: Button Rotate, Navbar-Mobile
+// Mobile width: 768px
+@media (max-width: 768px) {
+  // Hide Navbar Desktop
+  .navbar-collapse {
+    display: none;
+  }
+
+  .navbar-menu {
+    visibility: hidden;
+  }
+
+  // Visible Button mobile
+  .navbar-button {
+    cursor: pointer;
+    transition: all 0.4s ease-in;
+
+    .navbar-line {
+      width: 28px;
+      height: 3px;
+      margin: 0 0 5px 0;
+      background: $light-color;
+      transition: all 0.4s ease-in;
+    }
+  }
+
+  // Rotate Button
+  &.close {
+    transform: rotate(180deg);
+    transition: all 0.5s ease-in;
+
+    // X
+    .navbar-line {
+      // line 1 - rotate
+      &:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+      }
+
+      // line 2 - hidden
+      &:nth-child(2) {
+        opacity: 0;
+      }
+
+      // line 3 - rotate
+      &:nth-child(3) {
+        transform: rotate(-45deg) translate(6px, -6px);
+      }
+    }
+  }
+}
+
+// Navbar Mobile
+.navbar-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  overflow-x: hidden;
+  width: 350px;
+  height: 100vh;
+  background: $layout-color;
+  transform: translateX(-350px);
+  transition: width 0.5s ease-in;
+
+  .navbar-nav {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .nav-link {
+      font-size: 1.2rem;
+      text-transform: uppercase;
+      color: $light-color !important;
+    }
+  }
+}
+
+.show {
+  visibility: visible;
+  transform: translateX(0px);
+  transition: all 0.5s ease-in;
+}

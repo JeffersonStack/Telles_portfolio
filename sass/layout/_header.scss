@@ -1,0 +1,18 @@
+// Header: Navbar / Logo / Links / Icons
+
+.navbar {
+  background: $layout-color;
+  box-shadow: 2px 2px 4px rgba($dark-color, 0.4);
+
+  // Logo
+  &-brand {
+    font-family: $font-custom;
+    font-size: 1.9rem;
+    letter-spacing: 0.3rem;
+    text-shadow: 1px 1px 3px rgba($dark-color, 0.4);
+  }
+
+  .nav-link {
+    color: $light-color !important;
+  }
+}
