@@ -1,7 +1,7 @@
 .about {
   padding: 10rem 0;
   background: $dark-dark-color;
-  color: $light-color;
+  color: $gray-color;
 
   &-content {
     text-align: center;
@@ -15,22 +15,24 @@
 
     &--text {
       h2 {
-        font-size: 1.7rem;
+        font-size: 1.5rem;
         font-family: $font-custom;
         font-weight: 400;
+        color: $light-color;
+        text-transform: uppercase;
         letter-spacing: 0.2rem;
         margin-bottom: 1.4rem;
       }
 
       p {
         font-size: 1.2rem;
-        text-align: justify;
       }
 
       .links {
         font-family: $font-custom;
-        font-size: 1.4rem;
+        font-size: 1.2rem;
         font-weight: 400;
+        text-transform: uppercase;
         color: $layout-color;
       }
     }
@@ -41,36 +43,39 @@
 @media (min-width: 768px) {
   .about {
     &-content {
+      text-align: start;
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       gap: 20px;
 
-      img {
-        width: 450px;
-        height: 450px;
-        border: 3px solid $layout-color;
-        margin-bottom: 5rem;
-      }
-
       &--text {
         h2 {
-          font-size: 1.7rem;
-          font-family: $font-custom;
-          font-weight: 400;
-          letter-spacing: 0.2rem;
           margin-bottom: 1.4rem;
         }
 
         p {
-          font-size: 1rem;
-          text-align: justify;
+          font-size: 0.9rem;
+          font-weight: 400;
+          line-height: 2;
+          letter-spacing: 0.7px;
         }
 
         .links {
-          font-family: $font-custom;
-          font-size: 1rem;
-          font-weight: 400;
-          color: $layout-color;
+          font-size: 0.9rem;
+          text-decoration: none;
+
+          &::after {
+            font-family: fontawesome;
+            content: "\f061";
+            font-weight: 900;
+            margin-left: 4px;
+          }
+
+          &:hover::after {
+            margin-left: 15px;
+            visibility: hidden;
+            transition: all 0.3s ease-in;
+          }
         }
       }
     }
