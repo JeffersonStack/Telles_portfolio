@@ -1,0 +1,78 @@
+.about {
+  padding: 10rem 0;
+  background: $dark-dark-color;
+  color: $light-color;
+
+  &-content {
+    text-align: center;
+
+    img {
+      width: 350px;
+      height: 350px;
+      border: 3px solid $layout-color;
+      margin-bottom: 5rem;
+    }
+
+    &--text {
+      h2 {
+        font-size: 1.7rem;
+        font-family: $font-custom;
+        font-weight: 400;
+        letter-spacing: 0.2rem;
+        margin-bottom: 1.4rem;
+      }
+
+      p {
+        font-size: 1.2rem;
+        text-align: justify;
+      }
+
+      .links {
+        font-family: $font-custom;
+        font-size: 1.4rem;
+        font-weight: 400;
+        color: $layout-color;
+      }
+    }
+  }
+}
+
+// Media Desktop
+@media (min-width: 768px) {
+  .about {
+    &-content {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+
+      img {
+        width: 450px;
+        height: 450px;
+        border: 3px solid $layout-color;
+        margin-bottom: 5rem;
+      }
+
+      &--text {
+        h2 {
+          font-size: 1.7rem;
+          font-family: $font-custom;
+          font-weight: 400;
+          letter-spacing: 0.2rem;
+          margin-bottom: 1.4rem;
+        }
+
+        p {
+          font-size: 1rem;
+          text-align: justify;
+        }
+
+        .links {
+          font-family: $font-custom;
+          font-size: 1rem;
+          font-weight: 400;
+          color: $layout-color;
+        }
+      }
+    }
+  }
+}
