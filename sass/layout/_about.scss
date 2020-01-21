@@ -5,9 +5,11 @@
 
   &-content {
     text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
 
     .img-layout {
-      width: 480px;
       height: 480px;
       background-image: url(../../dist/img/about-img.jpg);
       background-size: cover;
