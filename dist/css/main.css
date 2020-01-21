@@ -77,17 +77,22 @@ body {
   color: #333333;
   height: 100000px; }
 
+img {
+  width: 100%; }
+
 .about {
   padding: 10rem 0;
   background: #1f1f1f;
   color: #b0b0b0; }
   .about-content {
     text-align: center; }
-    .about-content img {
-      width: 350px;
-      height: 350px;
-      border: 3px solid #ef5457;
-      margin-bottom: 5rem; }
+    .about-content .img-layout {
+      width: 480px;
+      height: 480px;
+      background-image: url(../../dist/img/about-img.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      margin-bottom: 3rem; }
     .about-content--text h2 {
       font-size: 1.5rem;
       font-family: "Raleway", sans-serif;
@@ -104,13 +109,29 @@ body {
       font-weight: 400;
       text-transform: uppercase;
       color: #ef5457; }
+    .about-content .skills-list {
+      text-align: start; }
+      .about-content .skills-list h3 {
+        font-size: 2rem;
+        text-transform: uppercase;
+        margin-bottom: 1em; }
+      .about-content .skills-list ul {
+        list-style: none; }
+      .about-content .skills-list ul li::before {
+        content: "\2022";
+        color: #ef5457;
+        display: inline-block;
+        width: 1rem;
+        margin-left: -1rem; }
+      .about-content .skills-list li {
+        font-size: 1.4rem; }
 
 @media (min-width: 768px) {
   .about-content {
     text-align: start;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px; }
+    grid-gap: 20px; }
     .about-content--text h2 {
       margin-bottom: 1.4rem; }
     .about-content--text p {

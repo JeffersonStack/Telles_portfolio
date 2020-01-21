@@ -6,11 +6,13 @@
   &-content {
     text-align: center;
 
-    img {
-      width: 350px;
-      height: 350px;
-      border: 3px solid $layout-color;
-      margin-bottom: 5rem;
+    .img-layout {
+      width: 480px;
+      height: 480px;
+      background-image: url(../../dist/img/about-img.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      margin-bottom: 3rem;
     }
 
     &--text {
@@ -36,6 +38,31 @@
         color: $layout-color;
       }
     }
+
+    .skills-list {
+      text-align: start;
+      h3 {
+        font-size: 2rem;
+        text-transform: uppercase;
+        margin-bottom: 1em;
+      }
+
+      ul {
+        list-style: none;
+      }
+
+      ul li::before {
+        content: "\2022";
+        color: $layout-color;
+        display: inline-block;
+        width: 1rem;
+        margin-left: -1rem;
+      }
+
+      li {
+        font-size: 1.4rem;
+      }
+    }
   }
 }
 
@@ -46,7 +73,7 @@
       text-align: start;
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      gap: 20px;
+      grid-gap: 20px;
 
       &--text {
         h2 {
