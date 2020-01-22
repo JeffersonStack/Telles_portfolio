@@ -1,6 +1,15 @@
 main {
   padding-top: 4.5rem; }
 
+.l-paragraphy {
+  font-size: 1.5rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  margin-bottom: 1.4rem; }
+
 .btn {
   padding: 0.6rem 3rem; }
 
@@ -95,14 +104,6 @@ img {
       background-size: cover;
       background-repeat: no-repeat;
       margin-bottom: 3rem; }
-    .about-content--text h2 {
-      font-size: 1.5rem;
-      font-family: "Raleway", sans-serif;
-      font-weight: 400;
-      color: #ffffff;
-      text-transform: uppercase;
-      letter-spacing: 0.2rem;
-      margin-bottom: 1.4rem; }
     .about-content--text p {
       font-size: 1.2rem; }
     .about-content--text .links {
@@ -113,10 +114,6 @@ img {
       color: #ef5457; }
     .about-content .skills-list {
       text-align: start; }
-      .about-content .skills-list h3 {
-        font-size: 2rem;
-        text-transform: uppercase;
-        margin-bottom: 1em; }
       .about-content .skills-list ul {
         list-style: none; }
       .about-content .skills-list ul li::before {
@@ -133,7 +130,7 @@ img {
     text-align: start;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 20px; }
+    grid-gap: 40px; }
     .about-content--text h2 {
       margin-bottom: 1.4rem; }
     .about-content--text p {
@@ -190,6 +187,31 @@ img {
 @media (min-width: 768px) {
   .home-content {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; } }
+
+@media (min-width: 992px) {
+  .home-content {
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center; } }
+
+.projetos {
+  padding: 10rem 0;
+  background: #212121; }
+  .projetos .l-box {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px; }
+  @media (min-width: 768px) {
+    .projetos .l-box {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 20px; } }
+  @media (min-width: 1200px) {
+    .projetos .l-box {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 20px; } }

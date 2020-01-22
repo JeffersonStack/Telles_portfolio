@@ -18,16 +18,6 @@
     }
 
     &--text {
-      h2 {
-        font-size: 1.5rem;
-        font-family: $font-custom;
-        font-weight: 400;
-        color: $light-color;
-        text-transform: uppercase;
-        letter-spacing: 0.2rem;
-        margin-bottom: 1.4rem;
-      }
-
       p {
         font-size: 1.2rem;
       }
@@ -43,11 +33,6 @@
 
     .skills-list {
       text-align: start;
-      h3 {
-        font-size: 2rem;
-        text-transform: uppercase;
-        margin-bottom: 1em;
-      }
 
       ul {
         list-style: none;
@@ -75,7 +60,7 @@
       text-align: start;
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      grid-gap: 20px;
+      grid-gap: 40px;
 
       &--text {
         h2 {

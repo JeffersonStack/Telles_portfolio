@@ -1,0 +1,26 @@
+.projetos {
+  padding: 10rem 0;
+  background: $dark-light-color;
+
+  .l-box {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+  }
+
+  @media (min-width: 768px) {
+    .l-box {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 20px;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .l-box {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 20px;
+    }
+  }
+}
