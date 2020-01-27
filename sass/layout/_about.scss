@@ -3,13 +3,14 @@
   background: $dark-dark-color;
   color: $gray-color;
 
-  &-content {
+  &__content {
     text-align: center;
     display: grid;
     grid-template-columns: 1fr;
+    grid-gap: 4rem;
     justify-content: center;
 
-    .img-layout {
+    &--img {
       height: 480px;
       background-image: url(../../dist/img/about-img.jpg);
       background-size: cover;
@@ -18,10 +19,6 @@
     }
 
     &--text {
-      p {
-        font-size: 1.2rem;
-      }
-
       .links {
         font-family: $font-custom;
         font-size: 1.2rem;
@@ -31,7 +28,7 @@
       }
     }
 
-    .skills-list {
+    &--skill {
       text-align: start;
 
       ul {
@@ -56,7 +53,7 @@
 // Media Desktop
 @media (min-width: 768px) {
   .about {
-    &-content {
+    &__content {
       text-align: start;
       display: grid;
       grid-template-columns: repeat(2, 1fr);

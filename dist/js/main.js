@@ -21,4 +21,15 @@
       openNavbar = false;
     }
   }
+
+  // scroll page
+  AOS.init({
+    disable: false,
+    startEvent: "DOMContentLoaded",
+    offset: 120,
+    delay: 100,
+    easing: "ease-in",
+    once: true,
+    anchorPlacement: "top-bottom"
+  });
 })();
