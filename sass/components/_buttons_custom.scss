@@ -1,13 +1,21 @@
 .btn {
-  padding: 0.6rem 3rem;
+  padding: 1.3rem 4rem;
 }
 
-.btn-outline-custom {
+.btn__outline--custom {
+  font-size: 1.3rem;
   background: transparent;
   color: $layout-color;
   font-weight: 400;
   border: 1px solid $layout-color;
   box-shadow: 1px 1px 4px rgba($layout-color, 0.4);
+
+  &::after {
+    content: "\f019";
+    font-family: fontawesome;
+    margin-left: 0.8rem;
+    display: inline-block;
+  }
 
   &:hover {
     background: $layout-color;

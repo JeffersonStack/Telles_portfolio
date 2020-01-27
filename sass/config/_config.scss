@@ -6,15 +6,19 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 92.5%;
+}
+
 body {
   font-family: $font-primaria;
-  font-size: 100%;
   line-height: 1.7;
   color: $dark-color;
-  // overflow: hidden;
-  height: 100000px;
+  background-color: $layout-color;
+  height: 100%;
 }
 
 img {
+  display: block;
   width: 100%;
 }

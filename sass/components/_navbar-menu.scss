@@ -61,6 +61,7 @@
   background: $layout-color;
   transform: translateX(-350px);
   transition: all 0.5s ease-in;
+  z-index: 3;
 
   .navbar-nav {
     height: 100vh;
