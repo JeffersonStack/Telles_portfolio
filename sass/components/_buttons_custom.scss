@@ -1,13 +1,14 @@
-.btn {
-  padding: 1.3rem 4rem;
-}
-
 .btn__outline--custom {
+  display: inline-block;
   font-size: 1.3rem;
+  text-decoration: none !important;
   background: transparent;
   color: $layout-color;
   font-weight: 400;
   border: 1px solid $layout-color;
+  border-radius: 4rem;
+  outline: none;
+  padding: 1rem 4rem;
   box-shadow: 1px 1px 4px rgba($layout-color, 0.4);
   animation: moveTextTop 2.4s ease-out;
 

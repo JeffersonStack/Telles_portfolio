@@ -5,9 +5,6 @@
 
   &__content {
     text-align: center;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 4rem;
     justify-content: center;
 
     &--img {
@@ -55,9 +52,6 @@
   .about {
     &__content {
       text-align: start;
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-gap: 40px;
 
       &--text {
         h2 {
