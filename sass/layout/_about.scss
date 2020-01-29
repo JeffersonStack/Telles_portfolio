@@ -3,10 +3,12 @@
   background: $dark-dark-color;
   color: $gray-color;
 
+  // About Content
   &__content {
     text-align: center;
     justify-content: center;
 
+    // imagem
     &--img {
       height: 480px;
       background-image: url(../../dist/img/about-img.jpg);
@@ -15,6 +17,7 @@
       margin-bottom: 3rem;
     }
 
+    // text box
     &--text {
       .links {
         font-family: $font-custom;
@@ -24,25 +27,15 @@
         color: $layout-color;
       }
     }
+  }
 
-    &--skill {
-      text-align: start;
+  // Skills / Habilidades
+  &__skills {
+    padding-top: 5rem;
 
-      ul {
-        list-style: none;
-      }
-
-      ul li::before {
-        content: "\2022";
-        color: $layout-color;
-        display: inline-block;
-        width: 1rem;
-        margin-left: -1rem;
-      }
-
-      li {
-        font-size: 1.4rem;
-      }
+    // Box
+    &--box {
+      background: $layout-color;
     }
   }
 }

@@ -142,18 +142,10 @@ img {
       font-weight: 400;
       text-transform: uppercase;
       color: #ef5457; }
-    .about__content--skill {
-      text-align: start; }
-      .about__content--skill ul {
-        list-style: none; }
-      .about__content--skill ul li::before {
-        content: "\2022";
-        color: #ef5457;
-        display: inline-block;
-        width: 1rem;
-        margin-left: -1rem; }
-      .about__content--skill li {
-        font-size: 1.4rem; }
+  .about__skills {
+    padding-top: 5rem; }
+    .about__skills--box {
+      background: #ef5457; }
 
 @media (min-width: 768px) {
   .about__content {
@@ -207,7 +199,7 @@ img {
     text-align: center;
     z-index: 1; }
     .home__content .title__primary {
-      font-size: 3.8rem;
+      font-size: 2rem;
       font-weight: 400;
       text-transform: uppercase;
       letter-spacing: 0.6rem;
