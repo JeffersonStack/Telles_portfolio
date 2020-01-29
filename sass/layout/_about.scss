@@ -27,15 +27,16 @@
         color: $layout-color;
       }
     }
-  }
 
-  // Skills / Habilidades
-  &__skills {
-    padding-top: 5rem;
+    &--info {
+      .info__list {
+        list-style: none;
 
-    // Box
-    &--box {
-      background: $layout-color;
+        li {
+          font-size: 1.2rem;
+          margin-bottom: 0.5rem;
+        }
+      }
     }
   }
 }

@@ -1,11 +1,29 @@
 .l__title {
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-family: $font-custom;
-  font-weight: 400;
+  font-weight: 600;
   color: $light-color;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
   margin-bottom: 1.4rem;
+  position: relative;
+
+  // Line after
+  &::after {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 2.7rem;
+    left: 0;
+    width: 50%;
+    height: 0.4rem;
+    background: $light-color;
+    // margin-top: 0.7rem;
+  }
+
+  span {
+    color: $layout-color;
+  }
 }
 
 .l__paragraphy {

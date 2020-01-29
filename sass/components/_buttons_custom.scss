@@ -12,12 +12,12 @@
   box-shadow: 1px 1px 4px rgba($layout-color, 0.4);
   animation: moveTextTop 2.4s ease-out;
 
-  &::after {
-    content: "\f019";
-    font-family: fontawesome;
-    margin-left: 0.8rem;
-    display: inline-block;
-  }
+  // &::after {
+  //   content: "\f019";
+  //   font-family: fontawesome;
+  //   margin-left: 0.8rem;
+  //   display: inline-block;
+  // }
 
   &:hover {
     background: $layout-color;
